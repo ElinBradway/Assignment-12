@@ -44,6 +44,7 @@
         align-items: center;
         padding: 8%;
         height: 1.1rem;
+        z-index: 1000;
     }
 
     .header-main-navigation {
@@ -64,16 +65,46 @@
         background-image: url(../images/dot-menu.png);
         background-size: cover;
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 
-    /* didn't have time to finish this part yet :)
     .dot-menu {
         display: none;
         position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #fff;
-    } */ 
+        z-index: 1000;
+    }
+
+    .dot-menu ul {
+        width: 100%;
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-top: 60px;
+    }
+
+    .dot-menu ul li {
+        flex-basis: 100%;
+         
+
+    } .dot-menu ul li a {
+        display: block;
+        height: 100%;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        border-bottom: 1px solid #242635;
+        font-size: 2rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center ;
+      }
+
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
